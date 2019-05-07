@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="signup.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+        <div class="nav">
+             <a class="logo" href="index.html"><i class="fab fa-vuejs" style="font-size:40px"></i>  </a>       
+         </div>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <div class="signup">
+             <h2>Sign up</h2>
+             <h1>Create your account</h1>
+             <p>Sign up to be in touch with us ...</p>
+          
+             <form>
+               <input id="firstname" type="text" placeholder="first name" required>
+                <input id="secondname" type="text" placeholder="last name" class="aa" required>
+                 <br>
+                 <input id="email" type="email" placeholder="Email Address" required>
+                 <br>
+                 <input id="password" type="password" placeholder="password" required>
+                 <br>
+                 <input id="phone" type="number" placeholder="Phone" required>
+                 <br>
+                 <p>By clicking Sign Up, you agree to our Terms of Use and our Privacy Policy.</p>
+                 <br>
+                 <input id="button" type="submit" value="sign up">
+             </form>
+             
+         </div>
+         <br>
+         <br>
+         <br>
+
+<script>
+    var button=document.getElementById("button");
+      var letters = /^[A-Za-z]+$/;
+    var firstname=document.getElementById("firstname");
+    var secondname=document.getElementById("secondname");
+    var password=document.getElementById("password");
+    var phone=document.getElementById("phone");
+    var email=document.getElementById("email");
+    button.onclick=function check(){
+        if(firstname.value==""||secondname.value==""||password.value==""||phone.value==" "||email.value==""){
+            alert("please fill this field to continue");
+            
+        }
+    else if(firstname.value.length<3||secondname.value.length<3){
+        alert("enter your right name please");
+        
+    }
+    
+    else if(password.value.length<6){
+        alert("password should contain at least 6 characters");
+        
+    }
+    else if(phone.value.length<11||phone.value==letters){
+        alert("this mobile number is not true");
+        
+    }
+    else{
+        alert("thank you"+" "+firstname.value+" "+"for sign up");
+    }
+    };
+    
+</script>
+    </body>
+</html>

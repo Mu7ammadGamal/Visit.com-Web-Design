@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    
+}
+
+.nav {
+    
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 0 15px 0 ;
+    margin: 0;
+    position: fixed;
+    z-index: 2;
+    box-sizing: border-box;
+    
+    
+    
+}
+.nav a{
+    display:inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.lifr{
+    float: right;
+    transition: 0.5s;
+}
+.lifr:hover{
+border-bottom: 2px solid orange;
+}
+.logo{
+    float: left;
+    
+}
+ a:hover{
+    
+    color:orange;
+}
+.first{
+    background: url('back.jpg') no-repeat scroll;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    height: 700px;
+    padding: 30px;
+}
+.startimg{
+  max-width: 100%;
+  height: auto;
+  
+}
+.startstring{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 16px;
+}
+h1{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 50px;
+    
+}
+span{
+    color:orange;
+    background-color: #000;
+    padding: 8px 16px;
+    opacity: 0.75;
+    font-size: 70px;
+    transition: 0.5s;
+}
+span:hover{
+    letter-spacing: 10px;
+}
+.header{
+    position: relative;
+    letter-spacing: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.service, .about , .contact, .endimgd{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    background-color: #fff;
+    
+}
+h2{
+    border-bottom: 1px solid gray;
+    padding: 16px 0;
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+.aboutimg{
+    float: right;
+    height: auto;
+
+}
+
+
+
+.service1{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'poppins',sans-serif;
+    background-color: #fff;
+}
+.continar .box{
+    position: relative;
+    width: 300px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+   text-align: center;
+    
+}
+.continar{
+    display: flex;
+    flex-wrap: wrap;
+  
+
+}
+.continar .box .icon {
+    background:orange;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+     margin: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+.continar .box:nth-child(1) .icon{
+    box-shadow: 0 0 0 0 orange ;
+    background:orange;
+}
+.continar .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px orange ;
+    
+}
+.continar .box .conact {
+    position: relative;
+    transition: 1s;
+}
+.continar .box:hover .conact{
+    color: #fff;
+}
+.continar .box .conact h3{
+    font-size: 20px;
+    margin: 10px 0;;
+    padding: 0;
+}
+.continar .box .conact p{
+    margin: 0;
+    padding: 0;
+}
+.ar{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type=text] , input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(252, 187, 67);
+    border-radius: 4px ;
+
+}
+input[type=submit] {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.endimg{
+    max-width: 100%;
+    height: auto;
+}
+.endimgd{
+    text-align: center;
+}
+
+.footer{
+    clear: both;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    
+    text-align: center;
+    width: 100%;
+}
+.icons{
+    font-size: 25px;
+    
+}

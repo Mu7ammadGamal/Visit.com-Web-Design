@@ -1,0 +1,124 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #F5F5F5;
+    
+}
+a,a:visited,a:active,a:any-link {text-decoration: none;color: black;}
+.nav {
+    
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    text-align: center;
+    display: block;
+    z-index: 1;
+    
+    
+}
+.nav a{
+    display:inline-block;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    }
+a:hover{
+    
+    color:orange;
+}
+.dbcg{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   height: 628px;
+   width: 100%;
+   background-image: url(dollars2.jpg);
+   background-size: cover;
+   top: 90px;
+   background-attachment: scroll;
+   overflow: hidden;
+}
+.footer div ul{list-style: none;display: inline;}
+.footer{
+   overflow: hidden;
+   display: flex;
+   justify-content:center;
+   background: white;
+   color: black;
+   position: relative;
+}
+.footer div{
+   width:170px;
+   margin: 15px auto 15px;
+}
+.footcont{
+   line-height: 30px;
+   font-size: 17px;
+}
+    
+table{
+    border: 2px dotted white;
+    position: absolute;
+    top: 19.5%;
+    padding: 50px;
+    border-radius: 80px 10px;
+}
+
+
+#input,#output{
+    width: 800px;
+    height: 55px;
+    padding-left: 15px;
+    font-size: 20px;    
+    
+}
+
+.arrow{margin: 10px 0px 10px 15px;float: right;}
+.arrow button{ 
+ height: 60px;
+ width: 145px;
+ background-image: linear-gradient(-180deg,#ffab12,#ffb123 90%);
+ transition: 0.3s;
+ color: white;
+ text-align: center;
+ font-size: 50px;
+ box-shadow: 2px 2px 8px #888888; 
+ border-radius: 5px;
+ border: none;
+  
+ }
+
+.arrow button:hover{
+ background-image: linear-gradient(-180deg,#fdb737,#ffc04d 90%); 
+ transition: 0.2s;
+ box-shadow: 4px 6px 8px #888888;
+}
+#choose{
+ width: 150px;
+ height: 60px;
+ padding-left: 48px;    
+ border-radius: 5px;
+ border: none;
+ margin: 10px 20px 10px 0px; 
+ font-size: 20px;
+ 
+}
+#choose2{
+ width: 150px;
+ height: 60px;
+ padding-left: 48px;    
+ border-radius: 5px;
+ border: none;
+ margin: 10px 0px 10px 74px; 
+ font-size: 20px;
+}
+#choose:hover,#choose2:hover,#input:hover,#output:hover{border: 2px solid orange;}

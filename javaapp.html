@@ -1,0 +1,75 @@
+<!DOCTYPE  html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+       <select id="choose"><option value="1">EGB</option><option value="2">dollar</option><option value="3">riyal</option><option value="4">euro</option></select>
+        <input id="input" type="num" placeholder="enter amount of money in EGB">
+        <button  id="button">change</button>
+        <input id="output" type="text" placeholder="here you get the result">
+         <select id="choose2"><option value="1">EGB</option><option value="2">dollar</option><option value="3">riyal</option><option value="4">euro</option></select>
+         
+        <script>
+             var choose=document.getElementById("choose");
+             var choose2=document.getElementById("choose2");
+             var letters = /^[A-Za-z]+$/;
+             var input=document.getElementById("input");
+             var output=document.getElementById("output");
+             var button=document.getElementById("button");
+   button.onclick=function change(){
+            if(choose.value==choose2.value){
+                input.value=output.value;
+                }
+                else if(input.value==""){
+                    alert("this field must not be empty");
+                }
+                else if(input.value=="0"){
+                    alert("this field must not be equal zero");
+                }
+                else if(input.value==letters){
+                    alert("this field must not contain letters");
+                }
+                
+            else if(choose.value==1&&choose2.value==2){
+                output.value=input.value*0.058;
+            }
+                  else if(choose.value==1&&choose2.value==3){
+                output.value=input.value*0.22;
+            }
+               else if(choose.value==1&&choose2.value==4){
+                output.value=input.value*0.052;
+            }
+              else if(choose.value==2&&choose2.value==1){
+                output.value=input.value*(1/0.058);
+            }
+              else if(choose.value==2&&choose2.value==3){
+                output.value=input.value*3.75;
+            }
+              else if(choose.value==2&&choose2.value==4){
+                output.value=input.value*0.24;
+            }
+             else if(choose.value==3&&choose2.value==1){
+                output.value=input.value*4.85;
+            }
+             else if(choose.value==3&&choose2.value==2){
+                output.value=input.value*0.27;
+            }
+             else if(choose.value==3&&choose2.value==4){
+                output.value=input.value*0.24;
+            }
+             else if(choose.value==4&&choose2.value==1){
+                output.value=input.value*19.21;
+            }
+             else if(choose.value==4&&choose2.value==2){
+                output.value=input.value*1.12;
+            }
+             else if(choose.value==4&&choose2.value==3){
+                output.value=input.value*4.19;
+            }
+         };
+             
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flight</title>
+        <link rel="stylesheet" href="Flight.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="nav">        
+             <a class="logo" href="index.html"><i class="fab fa-vuejs" style="font-size:40px"></i> 
+            </a>
+            <a class="lifr" href="signup.html">SIGN-UP</a>
+            <a class="lifr" href="signin.html">SIGN-IN</a>
+            <a class="lifr" href="index.html">HOME</a>
+        </div>
+        
+        <div class=bcgg>
+        <p class="text1g"><span style="font-size:32px;">HEllO</span><br>Where do you want to explore?</p><br>
+        
+            <div class="cont1g"><button class="headbookg" id="search"><i class="fas fa-search"></i> Search a Flight!</button></div>
+            <div class="cont2g">
+               
+                    <div class="from"><i class="fas fa-plane-departure"> <span style="font-family:sans-serif;font-weight: lighter;"><span style="border-bottom: 2px solid orange;padding: 0px 0px 5px;">Departure</span><br></span><br>
+                    <span class="fromtext">
+                        <label></label>
+                        <input id="departure" list="country" placeholder="From" style="box-shadow: 0.5px 0.5px 6.5px #888888;border: 2px solid white;border-radius: 3px;padding-left: 7px;">
+                        <datalist id="country">
+                                <option value="Afghanistan" />
+                                <option value="Albania" />
+                                <option value="Algeria" />
+                                <option value="American Samoa" />
+                                <option value="Andorra" />
+                                <option value="Angola" />
+                                <option value="Anguilla" />
+                                <option value="Antarctica" />
+                                <option value="Antigua and Barbuda" />
+                                <option value="Argentina" />
+                                <option value="Armenia" />
+                                <option value="Aruba" />
+                                <option value="Australia" />
+                                <option value="Austria" />
+                                <option value="Azerbaijan" />
+                                <option value="Bahamas" />
+                                <option value="Bahrain" />
+                                <option value="Bangladesh" />
+                                <option value="Barbados" />
+                                <option value="Belarus" />
+                                <option value="Belgium" />
+                                <option value="Belize" />
+                                <option value="Benin" />
+                                <option value="Bermuda" />
+                                <option value="Bhutan" />
+                                <option value="Bolivia" />
+                                <option value="Bosnia and Herzegovina" />
+                                <option value="Botswana" />
+                                <option value="Bouvet Island" />
+                                <option value="Brazil" />
+                                <option value="British Indian Ocean Territory" />
+                                <option value="Brunei Darussalam" />
+                                <option value="Bulgaria" />
+                                <option value="Burkina Faso" />
+                                <option value="Burundi" />
+                                <option value="Cambodia" />
+                                <option value="Cameroon" />
+                                <option value="Canada" />
+                                <option value="Cape Verde" />
+                                <option value="Cayman Islands" />
+                                <option value="Central African Republic" />
+                                <option value="Chad" />
+                                <option value="Chile" />
+                                <option value="China" />
+                                <option value="Christmas Island" />
+                                <option value="Cocos (Keeling) Islands" />
+                                <option value="Colombia" />
+                                <option value="Comoros" />
+                                <option value="Congo" />
+                                <option value="Congo, The Democratic Republic of The" />
+                                <option value="Cook Islands" />
+                                <option value="Costa Rica" />
+                                <option value="Cote D'ivoire" />
+                                <option value="Croatia" />
+                                <option value="Cuba" />
+                                <option value="Cyprus" />
+                                <option value="Czech Republic" />
+                                <option value="Denmark" />
+                                <option value="Djibouti" />
+                                <option value="Dominica" />
+                                <option value="Dominican Republic" />
+                                <option value="Ecuador" />
+                                <option value="Egypt" />
+                                <option value="El Salvador" />
+                                <option value="Equatorial Guinea" />
+                                <option value="Eritrea" />
+                                <option value="Estonia" />
+                                <option value="Ethiopia" />
+                                <option value="Falkland Islands (Malvinas)" />
+                                <option value="Faroe Islands" />
+                                <option value="Fiji" />
+                                <option value="Finland" />
+                                <option value="France" />
+                                <option value="French Guiana" />
+                                <option value="French Polynesia" />
+                                <option value="French Southern Territories" />
+                                <option value="Gabon" />
+                                <option value="Gambia" />
+                                <option value="Georgia" />
+                                <option value="Germany" />
+                                <option value="Ghana" />
+                                <option value="Gibraltar" />
+                                <option value="Greece" />
+                                <option value="Greenland" />
+                                <option value="Grenada" />
+                                <option value="Guadeloupe" />
+                                <option value="Guam" />
+                                <option value="Guatemala" />
+                                <option value="Guinea" />
+                                <option value="Guinea-bissau" />
+                                <option value="Guyana" />
+                                <option value="Haiti" />
+                                <option value="Heard Island and Mcdonald Islands" />
+                                <option value="Holy See (Vatican City State)" />
+                                <option value="Honduras" />
+                                <option value="Hong Kong" />
+                                <option value="Hungary" />
+                                <option value="Iceland" />
+                                <option value="India" />
+                                <option value="Indonesia" />
+                                <option value="Iran, Islamic Republic of" />
+                                <option value="Iraq" />
+                                <option value="Ireland" />
+                                <option value="Jamaica" />
+                                <option value="Japan" />
+                                <option value="Jordan" />
+                                <option value="Kazakhstan" />
+                                <option value="Kenya" />
+                                <option value="Kiribati" />
+                                <option value="Korea, Democratic People's Republic of" />
+                                <option value="Korea, Republic of" />
+                                <option value="Kuwait" />
+                                <option value="Kyrgyzstan" />
+                                <option value="Lao People's Democratic Republic" />
+                                <option value="Latvia" />
+                                <option value="Lebanon" />
+                                <option value="Lesotho" />
+                                <option value="Liberia" />
+                                <option value="Libyan Arab Jamahiriya" />
+                                <option value="Liechtenstein" />
+                                <option value="Lithuania" />
+                                <option value="Luxembourg" />
+                                <option value="Macao" />
+                                <option value="Macedonia, The Former Yugoslav Republic of" />
+                                <option value="Madagascar" />
+                                <option value="Malawi" />
+                                <option value="Malaysia" />
+                                <option value="Maldives" />
+                                <option value="Mali" />
+                                <option value="Malta" />
+                                <option value="Marshall Islands" />
+                                <option value="Martinique" />
+                                <option value="Mauritania" />
+                                <option value="Mauritius" />
+                                <option value="Mayotte" />
+                                <option value="Mexico" />
+                                <option value="Micronesia, Federated States of" />
+                                <option value="Moldova, Republic of" />
+                                <option value="Monaco" />
+                                <option value="Mongolia" />
+                                <option value="Montserrat" />
+                                <option value="Morocco" />
+                                <option value="Mozambique" />
+                                <option value="Myanmar" />
+                                <option value="Namibia" />
+                                <option value="Nauru" />
+                                <option value="Nepal" />
+                                <option value="Netherlands" />
+                                <option value="Netherlands Antilles" />
+                                <option value="New Caledonia" />
+                                <option value="New Zealand" />
+                                <option value="Nicaragua" />
+                                <option value="Niger" />
+                                <option value="Nigeria" />
+                                <option value="Niue" />
+                                <option value="Norfolk Island" />
+                                <option value="Northern Mariana Islands" />
+                                <option value="Norway" />
+                                <option value="Oman" />
+                                <option value="Pakistan" />
+                                <option value="Palau" />
+                                <option value="Palestinian Territory, Occupied" />
+                                <option value="Panama" />
+                                <option value="Papua New Guinea" />
+                                <option value="Paraguay" />
+                                <option value="Peru" />
+                                <option value="Philippines" />
+                                <option value="Pitcairn" />
+                                <option value="Poland" />
+                                <option value="Portugal" />
+                                <option value="Puerto Rico" />
+                                <option value="Qatar" />
+                                <option value="Reunion" />
+                                <option value="Romania" />
+                                <option value="Russian Federation" />
+                                <option value="Rwanda" />
+                                <option value="Saint Helena" />
+                                <option value="Saint Kitts and Nevis" />
+                                <option value="Saint Lucia" />
+                                <option value="Saint Pierre and Miquelon" />
+                                <option value="Saint Vincent and The Grenadines" />
+                                <option value="Samoa" />
+                                <option value="San Marino" />
+                                <option value="Sao Tome and Principe" />
+                                <option value="Saudi Arabia" />
+                                <option value="Senegal" />
+                                <option value="Serbia and Montenegro" />
+                                <option value="Seychelles" />
+                                <option value="Sierra Leone" />
+                                <option value="Singapore" />
+                                <option value="Slovakia" />
+                                <option value="Slovenia" />
+                                <option value="Solomon Islands" />
+                                <option value="Somalia" />
+                                <option value="South Africa" />
+                                <option value="South Georgia and The South Sandwich Islands" />
+                                <option value="Spain" />
+                                <option value="Sri Lanka" />
+                                <option value="Sudan" />
+                                <option value="Suriname" />
+                                <option value="Svalbard and Jan Mayen" />
+                                <option value="Swaziland" />
+                                <option value="Sweden" />
+                                <option value="Switzerland" />
+                                <option value="Syrian Arab Republic" />
+                                <option value="Taiwan, Province of China" />
+                                <option value="Tajikistan" />
+                                <option value="Tanzania, United Republic of" />
+                                <option value="Thailand" />
+                                <option value="Timor-leste" />
+                                <option value="Togo" />
+                                <option value="Tokelau" />
+                                <option value="Tonga" />
+                                <option value="Trinidad and Tobago" />
+                                <option value="Tunisia" />
+                                <option value="Turkey" />
+                                <option value="Turkmenistan" />
+                                <option value="Turks and Caicos Islands" />
+                                <option value="Tuvalu" />
+                                <option value="Uganda" />
+                                <option value="Ukraine" />
+                                <option value="United Arab Emirates" />
+                                <option value="United Kingdom" />
+                                <option value="United States" />
+                                <option value="United States Minor Outlying Islands" />
+                                <option value="Uruguay" />
+                                <option value="Uzbekistan" />
+                                <option value="Vanuatu" />
+                                <option value="Venezuela" />
+                                <option value="Viet Nam" />
+                                <option value="Virgin Islands, British" />
+                                <option value="Virgin Islands, U.S" />
+                                <option value="Wallis and Futuna" />
+                                <option value="Western Sahara" />
+                                <option value="Yemen" />
+                                <option value="Zambia" />
+                                <option value="Zimbabwe" />
+                        </datalist>                                                       
+                    </span>
+                    </i></div>
+                    
+                    
+                    
+                    <div class="to"><i class="fas fa-plane-arrival"> <span style="font-family:sans-serif;font-weight: lighter;"><span style="border-bottom: 2px solid orange;padding: 0px 0px 5px;">Arrival</span><br></span><br>
+                    <span class="totext">
+                    <label></label>
+                        <input id="arrival" list="country" placeholder="To" style="box-shadow: 0.5px 0.5px 6.5px #888888;border: 2px solid white;border-radius: 3px;padding-left: 7px;">
+                        <datalist id="country">
+                                <option value="Afghanistan" />
+                                <option value="Albania" />
+                                <option value="Algeria" />
+                                <option value="American Samoa" />
+                                <option value="Andorra" />
+                                <option value="Angola" />
+                                <option value="Anguilla" />
+                                <option value="Antarctica" />
+                                <option value="Antigua and Barbuda" />
+                                <option value="Argentina" />
+                                <option value="Armenia" />
+                                <option value="Aruba" />
+                                <option value="Australia" />
+                                <option value="Austria" />
+                                <option value="Azerbaijan" />
+                                <option value="Bahamas" />
+                                <option value="Bahrain" />
+                                <option value="Bangladesh" />
+                                <option value="Barbados" />
+                                <option value="Belarus" />
+                                <option value="Belgium" />
+                                <option value="Belize" />
+                                <option value="Benin" />
+                                <option value="Bermuda" />
+                                <option value="Bhutan" />
+                                <option value="Bolivia" />
+                                <option value="Bosnia and Herzegovina" />
+                                <option value="Botswana" />
+                                <option value="Bouvet Island" />
+                                <option value="Brazil" />
+                                <option value="British Indian Ocean Territory" />
+                                <option value="Brunei Darussalam" />
+                                <option value="Bulgaria" />
+                                <option value="Burkina Faso" />
+                                <option value="Burundi" />
+                                <option value="Cambodia" />
+                                <option value="Cameroon" />
+                                <option value="Canada" />
+                                <option value="Cape Verde" />
+                                <option value="Cayman Islands" />
+                                <option value="Central African Republic" />
+                                <option value="Chad" />
+                                <option value="Chile" />
+                                <option value="China" />
+                                <option value="Christmas Island" />
+                                <option value="Cocos (Keeling) Islands" />
+                                <option value="Colombia" />
+                                <option value="Comoros" />
+                                <option value="Congo" />
+                                <option value="Congo, The Democratic Republic of The" />
+                                <option value="Cook Islands" />
+                                <option value="Costa Rica" />
+                                <option value="Cote D'ivoire" />
+                                <option value="Croatia" />
+                                <option value="Cuba" />
+                                <option value="Cyprus" />
+                                <option value="Czech Republic" />
+                                <option value="Denmark" />
+                                <option value="Djibouti" />
+                                <option value="Dominica" />
+                                <option value="Dominican Republic" />
+                                <option value="Ecuador" />
+                                <option value="Egypt" />
+                                <option value="El Salvador" />
+                                <option value="Equatorial Guinea" />
+                                <option value="Eritrea" />
+                                <option value="Estonia" />
+                                <option value="Ethiopia" />
+                                <option value="Falkland Islands (Malvinas)" />
+                                <option value="Faroe Islands" />
+                                <option value="Fiji" />
+                                <option value="Finland" />
+                                <option value="France" />
+                                <option value="French Guiana" />
+                                <option value="French Polynesia" />
+                                <option value="French Southern Territories" />
+                                <option value="Gabon" />
+                                <option value="Gambia" />
+                                <option value="Georgia" />
+                                <option value="Germany" />
+                                <option value="Ghana" />
+                                <option value="Gibraltar" />
+                                <option value="Greece" />
+                                <option value="Greenland" />
+                                <option value="Grenada" />
+                                <option value="Guadeloupe" />
+                                <option value="Guam" />
+                                <option value="Guatemala" />
+                                <option value="Guinea" />
+                                <option value="Guinea-bissau" />
+                                <option value="Guyana" />
+                                <option value="Haiti" />
+                                <option value="Heard Island and Mcdonald Islands" />
+                                <option value="Holy See (Vatican City State)" />
+                                <option value="Honduras" />
+                                <option value="Hong Kong" />
+                                <option value="Hungary" />
+                                <option value="Iceland" />
+                                <option value="India" />
+                                <option value="Indonesia" />
+                                <option value="Iran, Islamic Republic of" />
+                                <option value="Iraq" />
+                                <option value="Ireland" />
+                                <option value="Jamaica" />
+                                <option value="Japan" />
+                                <option value="Jordan" />
+                                <option value="Kazakhstan" />
+                                <option value="Kenya" />
+                                <option value="Kiribati" />
+                                <option value="Korea, Democratic People's Republic of" />
+                                <option value="Korea, Republic of" />
+                                <option value="Kuwait" />
+                                <option value="Kyrgyzstan" />
+                                <option value="Lao People's Democratic Republic" />
+                                <option value="Latvia" />
+                                <option value="Lebanon" />
+                                <option value="Lesotho" />
+                                <option value="Liberia" />
+                                <option value="Libyan Arab Jamahiriya" />
+                                <option value="Liechtenstein" />
+                                <option value="Lithuania" />
+                                <option value="Luxembourg" />
+                                <option value="Macao" />
+                                <option value="Macedonia, The Former Yugoslav Republic of" />
+                                <option value="Madagascar" />
+                                <option value="Malawi" />
+                                <option value="Malaysia" />
+                                <option value="Maldives" />
+                                <option value="Mali" />
+                                <option value="Malta" />
+                                <option value="Marshall Islands" />
+                                <option value="Martinique" />
+                                <option value="Mauritania" />
+                                <option value="Mauritius" />
+                                <option value="Mayotte" />
+                                <option value="Mexico" />
+                                <option value="Micronesia, Federated States of" />
+                                <option value="Moldova, Republic of" />
+                                <option value="Monaco" />
+                                <option value="Mongolia" />
+                                <option value="Montserrat" />
+                                <option value="Morocco" />
+                                <option value="Mozambique" />
+                                <option value="Myanmar" />
+                                <option value="Namibia" />
+                                <option value="Nauru" />
+                                <option value="Nepal" />
+                                <option value="Netherlands" />
+                                <option value="Netherlands Antilles" />
+                                <option value="New Caledonia" />
+                                <option value="New Zealand" />
+                                <option value="Nicaragua" />
+                                <option value="Niger" />
+                                <option value="Nigeria" />
+                                <option value="Niue" />
+                                <option value="Norfolk Island" />
+                                <option value="Northern Mariana Islands" />
+                                <option value="Norway" />
+                                <option value="Oman" />
+                                <option value="Pakistan" />
+                                <option value="Palau" />
+                                <option value="Palestinian Territory, Occupied" />
+                                <option value="Panama" />
+                                <option value="Papua New Guinea" />
+                                <option value="Paraguay" />
+                                <option value="Peru" />
+                                <option value="Philippines" />
+                                <option value="Pitcairn" />
+                                <option value="Poland" />
+                                <option value="Portugal" />
+                                <option value="Puerto Rico" />
+                                <option value="Qatar" />
+                                <option value="Reunion" />
+                                <option value="Romania" />
+                                <option value="Russian Federation" />
+                                <option value="Rwanda" />
+                                <option value="Saint Helena" />
+                                <option value="Saint Kitts and Nevis" />
+                                <option value="Saint Lucia" />
+                                <option value="Saint Pierre and Miquelon" />
+                                <option value="Saint Vincent and The Grenadines" />
+                                <option value="Samoa" />
+                                <option value="San Marino" />
+                                <option value="Sao Tome and Principe" />
+                                <option value="Saudi Arabia" />
+                                <option value="Senegal" />
+                                <option value="Serbia and Montenegro" />
+                                <option value="Seychelles" />
+                                <option value="Sierra Leone" />
+                                <option value="Singapore" />
+                                <option value="Slovakia" />
+                                <option value="Slovenia" />
+                                <option value="Solomon Islands" />
+                                <option value="Somalia" />
+                                <option value="South Africa" />
+                                <option value="South Georgia and The South Sandwich Islands" />
+                                <option value="Spain" />
+                                <option value="Sri Lanka" />
+                                <option value="Sudan" />
+                                <option value="Suriname" />
+                                <option value="Svalbard and Jan Mayen" />
+                                <option value="Swaziland" />
+                                <option value="Sweden" />
+                                <option value="Switzerland" />
+                                <option value="Syrian Arab Republic" />
+                                <option value="Taiwan, Province of China" />
+                                <option value="Tajikistan" />
+                                <option value="Tanzania, United Republic of" />
+                                <option value="Thailand" />
+                                <option value="Timor-leste" />
+                                <option value="Togo" />
+                                <option value="Tokelau" />
+                                <option value="Tonga" />
+                                <option value="Trinidad and Tobago" />
+                                <option value="Tunisia" />
+                                <option value="Turkey" />
+                                <option value="Turkmenistan" />
+                                <option value="Turks and Caicos Islands" />
+                                <option value="Tuvalu" />
+                                <option value="Uganda" />
+                                <option value="Ukraine" />
+                                <option value="United Arab Emirates" />
+                                <option value="United Kingdom" />
+                                <option value="United States" />
+                                <option value="United States Minor Outlying Islands" />
+                                <option value="Uruguay" />
+                                <option value="Uzbekistan" />
+                                <option value="Vanuatu" />
+                                <option value="Venezuela" />
+                                <option value="Viet Nam" />
+                                <option value="Virgin Islands, British" />
+                                <option value="Virgin Islands, U.S" />
+                                <option value="Wallis and Futuna" />
+                                <option value="Western Sahara" />
+                                <option value="Yemen" />
+                                <option value="Zambia" />
+                                <option value="Zimbabwe" />
+                        </datalist>
+                    </span>
+                    </i></div>
+            </div>
+                    <div class="cont3g">
+               
+                        <div class="ddate"><i class="far fa-calendar-alt"> <span style="font-family:sans-serif"><span style="border-bottom: 2px solid orange;padding: 0px 0px 5px;">Departure Date</span><br></span><br>
+                        <span class="fromtext">
+                            <label></label>
+                            <input id="from" type="date" placeholder="Departure date" style="box-shadow: 0.5px 0.5px 6.5px #888888;border: 2px solid white;border-radius: 3px;padding-left: 7px;">                                                                               
+                        </span>
+                        </i></div>
+                        
+                        
+                        
+                   
+                        <div class="rdate"><i class="far fa-calendar-alt"> <span style="font-family:sans-serif"><span style="border-bottom: 2px solid orange;padding: 0px 0px 5px;">Return Date</span><br></span><br>
+                        <span class="fromtext">
+                            <label></label>
+                            <input id="to" type="date" placeholder="Departure date" style="box-shadow: 0.5px 0.5px 6.5px #888888;border: 2px solid white;border-radius: 3px;padding-left: 7px;">
+                                                                               
+                        </span>
+                        </i></div>
+                    </div>
+        </div>
+        
+        <div class="chkng">
+            <table>
+                <caption>Check-in / Manage booking</caption>
+                <tr>
+                 <input type="text" placeholder="Ticket number or reservation code (PNR)" class="tng" id="tn">
+                 <input id="ps" type="text" placeholder="Passenger surname" class="psg">
+                <button id="chknbut" class="arrow"><i class="fas fa-angle-double-right"></i></button>
+                </tr>
+            </table>
+                        
+        </div>
+        <div class="statg">
+            <table>
+                <caption>Flight status</caption>
+                
+                <input id="fn" class="ifng" type="text" placeholder="Enter flight number">
+                <input id="fdate" class="fdg"type="date">                
+                <button id="statusbut" class="arrow">  <i class="fas fa-angle-double-right"></i></button>                
+            </table>
+                        
+        </div>
+        <div class="line"></div><h3>Top Destinations</h3>
+        
+            <div class="container">
+                <div class="cairo"><h5>Cairo<i class="fas fa-arrow-circle-up" style=" font-size: 20px; right: 10px; position: absolute; top:13px"></i><br><span>Egypt<button id="booknow0">Book Now!</button></span></h5></div> 
+                <div class="turkey"><h5>Istanbul<i class="fas fa-arrow-circle-up" style=" position: absolute;font-size: 20px; right: 10px;top:13px"></i><br><span>Turkey<button id="booknow1">Book Now!</button></span></h5></div>
+                <div class="paris"><h5>Paris<i class="fas fa-arrow-circle-up" style=" position: absolute;font-size: 20px; right: 10px;top:13px"></i><br><span>France<button id="booknow2">Book Now!</button></span></h5></div>
+                <div class="pals"><h5>Jerusalem<i class="fas fa-arrow-circle-up" style=" position: absolute;font-size: 20px; right: 10px;top:13px"></i><br><span>Palestine<button id="booknow3">Book Now!</button></span></h5></div>
+                
+            </div>            
+            <div class="container">
+                <div class="riyadh"><h5>Riyadh<i class="fas fa-arrow-circle-up" style=" position: absolute;font-size: 20px; right: 10px;top:13px"></i><br><span>Saudi Arabia<button id="booknow4">Book Now!</button></span></h5></div>
+                <div class="moscow"><h5>Moscow<i class="fas fa-arrow-circle-up" style=" position: absolute;font-size: 20px; right: 10px;top:13px"></i><br><span>Russia<button id="booknow5">Book Now!</button></span></h5></div>
+                <div class="hk"><h5>Hong Kong<i class="fas fa-arrow-circle-up" style=" position: absolute;font-size: 20px; right: 10px;top:13px"></i><br><span>China<button id="booknow6">Book Now!</button></span></h5></div> 
+                <div class="barc"><h5>Barcelona<i class="fas fa-arrow-circle-up" style=" position: absolute;font-size: 20px; right: 10px;top:13px"></i><br><span>Spain<button id="booknow7">Book Now!</button></span></h5></div>               
+            </div>
+            
+            <div class="line"></div><h3>Today's Hot Offers</h3>
+            <table class="offer">
+            <tr>
+                <th>From</th>
+                <th><i class="fas fa-exchange-alt"></i></th>
+                <th>To</th>
+                <th>One way price</th>
+                <th>Round trip price</th>
+            </tr>
+            <tr style="background-color: white">
+                <td>Cairo</td>
+                <td><i class="fas fa-exchange-alt"></i></td>
+                <td>Istanbul</td>
+                <td id="p1">210$</td>
+                <td id="p11">380$</td>
+            </tr>
+            <tr>
+                <td>Moscow</td>
+                <td><i class="fas fa-exchange-alt"></i></td>
+                <td>Dubai</td>
+                <td id="p2">194$</td>
+                <td id="p22">350$</td>
+            </tr>
+            <tr style="background-color: white">
+                <td>Riyadh</td>
+                <td><i class="fas fa-exchange-alt"></i></td>
+                <td>Hong Kong</td>
+                <td id="p3">620$</td>
+                <td id="p33">1030$</td>
+            </tr>
+            <tr>
+                <td>Barcelona</td>
+                <td><i class="fas fa-exchange-alt"></i></td>
+                <td>New Delhi</td>
+                <td id="p4">370$</td>
+                <td id="p44">715$</td>
+            </tr>
+            <tr style="background-color: white">
+                <td>Paris</td>
+                <td><i class="fas fa-exchange-alt"></i></td>
+                <td>Sao Paulo</td>
+                <td id="p5">283$</td>
+                <td id="p55">545$</td>
+            </tr>
+            <tr>
+                <td>London</td>
+                <td><i class="fas fa-exchange-alt"></i></td>
+                <td>New York</td>
+                <td id="p6">370$</td>
+                <td id="p66">715$</td>
+            </tr>
+            <tr style="background-color: white">
+                <td>Hurghada</td>
+                <td><i class="fas fa-exchange-alt"></i></td>
+                <td>Milan</td>
+                <td id="p7">203$</td>
+                <td id="p77">391$</td>
+            </tr>
+        </table>
+            
+         <div class="line"></div><h3>Top Airlines</h3>
+         
+         <div class="container2">
+                <div class="hv"><h5><i class="fas fa-arrow-circle-up"></i><br>Transavia<br><span>France</span></h5></div> 
+                <div class="ej"><h5><i class="fas fa-arrow-circle-up"></i><br>Easy Jet<br><span>England</span></h5></div>
+                <div class="ms"><h5><i class="fas fa-arrow-circle-up"></i><br>EgyptAir<br><span>Egypt</span></h5></div>
+                <div class="az"><h5><i class="fas fa-arrow-circle-up"></i><br>Alitalia<br><span>Italy</span></h5></div>
+                <div class="sv"><h5><i class="fas fa-arrow-circle-up"></i><br>Saudia<br><span>Saudi Arabia</span></h5></div>
+        </div>
+        <div class="container2">
+                <div class="ek"><h5><i class="fas fa-arrow-circle-up"></i><br>Fly Emirates<br><span>UAE</span></h5></div> 
+                <div class="af"><h5><i class="fas fa-arrow-circle-up"></i><br>AirFrance<br><span>France</span></h5></div>
+                <div class="tk"><h5><i class="fas fa-arrow-circle-up"></i><br>Turkish Airlines<br><span>Turkey</span></h5></div>
+                <div class="be"><h5><i class="fas fa-arrow-circle-up"></i><br>FlyBe<br><span>England</span></h5></div>
+                <div class="kk"><h5><i class="fas fa-arrow-circle-up"></i><br>Atlas Global<br><span>Turkey</span></h5></div>
+        </div>
+        
+        <div class="line"></div><h3>Why us!</h3>
+        <table class="whyus">
+        <tr>
+            <th style="border-radius: 64px 7px 7px"><i style="font-size: 50px;" class="fas fa-hand-holding-usd"></i><br><br>Price Match Promise</th>
+            <th><i style="font-size: 50px;" class="fas fa-check-square"></i><br><br>Easy Booking</th>
+            <th style="border-radius: 7px 7px 64px"><i style="font-size: 50px;" class="fas fa-hands"></i><br><br>Customer Care</th>
+        </tr>
+        <tr>
+            <td style="border-radius: 64px 0px 0px">Find our lowest price to destinations worldwide, guaranteed</td>
+            <td>Search, select and save the fastest way to book your trip</td>
+            <td style="border-radius: 0px 0px 64px">Get award - winning service and special deals by contact us</td>
+        </tr>
+    </table>
+        
+        
+    <div class="footer">
+            <div style="width: 200px;">
+                <ul>
+                <li>About</li>
+                    <ul>
+                        <li style=" font-size: 12px;">Visit.com is a leading travel comparison site that lets you find cheap flights, hotels, car rentals and vacation packages online. Whether you're traveling for fun, business, adventure, or relaxation, your ideal trip is simply a click away! You can compare airline fares, hotel rates, and car rentals from all the top internet travel sites in one location. Finding cheap flights has never been easier. Save time, save money; there's no need to visit website after website to find cheap airline tickets or the best deals. It's all here for you in one location. LowFares.com - we'll get you where you want to go.</li>
+                    </ul>
+            </ul></div>
+            
+            <div><ul>
+                
+                    
+                <li>Explore</li>
+                    <ul class="footcont">
+                        <li class="footcont"><a href="index.html">Home</a></li>
+                        <li class="footcont" id="11"><a href="#11">About</a></li>
+                        <li class="footcont"><a href="">Capabilities</a></li>
+                        <li class="footcont"><a href="">Careers</a></li>
+                    </ul>
+            </ul></div>
+            
+            <div><ul>
+                    
+                <li>Follow</li>
+                    <ul>
+                        <li class="footcont"><i style="margin-right: 5px;" class="fab fa-facebook"></i><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        <li class="footcont"><i style="margin-right: 5px;" class="fab fa-instagram"></i><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li class="footcont"><i style="margin-right: 5px;" class="fab fa-twitter"></i> <a href="https://twitter.com/ target="_blank"">Twitter</a></li>
+                    </ul>
+            </ul></div>
+            
+            <div><ul>
+                
+                <li>Legal</li>
+                    <ul>
+                        <li class="footcont" id="12"><a href="#12">Terms</a></li>
+                        <li class="footcont" id="13"><a href="#13">Privacy</a></li>
+                        <li class="footcont" id="14"><a href="#14">FAQ</a></li>
+                    </ul>
+            </ul></div>
+            
+            <div><ul>
+                    
+                <li>New Business</li>
+                    <ul>
+                        <li class="footcont">+ (##) ### ## #</li>
+                        <li class="footcont"><a href="" target="_blank">example@visit.com</a></li>
+                    </ul>
+                    
+            </ul><div style=" top: 82%;position: absolute; font-size: 13px; letter-spacing: 3px; text-align: center;width: fit-content; left: 44%" >&copy MUHAMMAD GAMAL</div>
+            </div></div> 
+            
+        
+        <script src="Flight.js"></script>            
+        
+    </body>
+</html>

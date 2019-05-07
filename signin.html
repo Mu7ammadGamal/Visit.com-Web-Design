@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <link rel="stylesheet" href="signin.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+        <div class="nav">
+             <a class="logo" href="index.html"><i class="fab fa-vuejs" style="font-size:40px"></i>  </a>       
+         </div>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <div class="signup">
+             <h2>Sign in</h2>
+             <h1>Sign in to your account</h1>
+             <p>Sign in to be in touch with us ...</p>
+          
+             <form>
+               
+                 <input id="email" type="text" placeholder="Email Address" required>
+                 <br>
+                 <input id="password" type="password" placeholder="password" required>
+                 <br>
+                 <p>By clicking Sign Up, you agree to our Terms of Use and our Privacy Policy.</p>
+                 <br>
+                 <input type="submit" id="button" value="sign in">
+             </form>
+             
+         </div>
+         <br>
+         <br>
+         <br>
+         <script>
+            var password=document.getElementById("password");
+            var button=document.getElementById("button");
+            var email=document.getElementById("email");
+         
+            
+            button.onclick=function change(){
+                
+           if(email.value==""||password.value==""){
+                alert("this field must not be empty");
+            }
+           else  if(email.value!="amr@gmail.com"&&email.value!="gamal@gmail.com"&&email.value!="ramadan@gmail.com"){
+                alert("wrong email please try again");
+            }
+       else if(password.value!="admin"){
+                alert("password not true please try again");
+            }
+            else{
+                   var search=email.value.indexOf("@",1);
+                   var text=email.value;
+                alert("thank you"+" "+text.slice(0,search)+" "+"for sign in");
+            }
+            };
+         </script>
+
+    </body>
+</html>
